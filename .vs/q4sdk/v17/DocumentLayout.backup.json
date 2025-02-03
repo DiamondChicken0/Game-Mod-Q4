@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -51,19 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\Player.cpp",
+              "RelativeDocumentMoniker": "game\\Player.cpp",
+              "ToolTip": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\Player.cpp",
+              "RelativeToolTip": "game\\Player.cpp",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T20:14:23.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WeaponBlaster.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp",
               "RelativeDocumentMoniker": "game\\weapon\\WeaponBlaster.cpp",
               "ToolTip": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp",
               "RelativeToolTip": "game\\weapon\\WeaponBlaster.cpp",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAAwK0BAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAAwKYBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-23T20:02:23.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SysCmds.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\SysCmds.cpp",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SaveGame.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\SaveGame.cpp",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Class.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\gamesys\\Class.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\Class.cpp",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Simd.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\idlib\\math\\Simd.cpp",
               "RelativeDocumentMoniker": "idlib\\math\\Simd.cpp",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RenderWorld.h",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\renderer\\RenderWorld.h",
               "RelativeDocumentMoniker": "renderer\\RenderWorld.h",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Weapon.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\Weapon.cpp",
               "RelativeDocumentMoniker": "game\\Weapon.cpp",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Game.def",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\game\\Game.def",
               "RelativeDocumentMoniker": "game\\Game.def",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LangDict.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\GameMod\\Game-Mod-Q4\\idlib\\LangDict.cpp",
               "RelativeDocumentMoniker": "idlib\\LangDict.cpp",
