@@ -53,7 +53,7 @@ protected:
 
 	// rocket mod 
 
-	int                                  heat;
+	int                                  heat = 0;
 	time_t                               timeSinceLastFire;
 
 
@@ -456,9 +456,10 @@ stateResult_t rvWeaponRocketLauncher::State_Fire(const stateParms_t& parms) {
 	switch (parms.stage) {
 	case STAGE_INIT:
 		nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier(PMOD_FIRERATE));
-		Attack(false, 1, spread, 0, 1.0f);
 
+		//MOD
 
+		/* DOES NOT WORK
 		time_t currTime;
 		time(&currTime);
 		heat = heat - (difftime(currTime, timeSinceLastFire));
@@ -471,8 +472,24 @@ stateResult_t rvWeaponRocketLauncher::State_Fire(const stateParms_t& parms) {
 
 		if (heat >= 2)
 		{
-			SelfExplode(); //IMPLEMENT SELF EXPLOSION aka: blow up the player
+			Attack(false, 100, spread + 1000, -6, 9999.0f);
 		}
+		else
+		{
+			Attack(false, 3, spread, 0, 1.0f);
+		}
+		*/
+
+		heat = heat + 1;
+		if (heat >= 10)
+		{
+			Attack(false, 1000, spread + 25000, 0, 9999.0f);
+		}
+		else
+		{
+			Attack(false, 3, spread, 0, 1.0f);
+		}
+		// MOD END	
 		PlayAnim(ANIMCHANNEL_LEGS, "fire", parms.blendFrames);
 		return SRESULT_STAGE(STAGE_WAIT);
 
