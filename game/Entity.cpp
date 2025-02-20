@@ -100,6 +100,7 @@ const idEventDef EV_PlayEffect( "playEffect", "ssd" );
 const idEventDef EV_StopEffect( "stopEffect", "s" );
 const idEventDef EV_StopAllEffects( "stopAllEffects" );
 const idEventDef EV_GetHealth ( "getHealth", NULL, 'f' );
+const idEventDef EV_GetMana   ( "getMana", NULL, 'f' );
 // bdube: surface related events
 const idEventDef EV_HideSurface( "hideSurface", "s" );
 const idEventDef EV_ShowSurface( "showSurface", "s" );
@@ -121,6 +122,7 @@ const idEventDef EV_AppendTarget( "appendTarget", "E", 'f' );
 const idEventDef EV_RemoveTarget( "removeTarget", "e" );
 // mekberg:
 const idEventDef EV_SetHealth( "setHealth", "f" );
+const idEventDef EV_SetMana("setMana", "f");
 // RAVEN END
 
 ABSTRACT_DECLARATION( idClass, idEntity )
@@ -199,6 +201,7 @@ ABSTRACT_DECLARATION( idClass, idEntity )
 	EVENT( EV_StopEffect,			idEntity::Event_StopEffect )
 	EVENT( EV_StopAllEffects,		idEntity::Event_StopAllEffects )
 	EVENT( EV_GetHealth,			idEntity::Event_GetHealth )
+	EVENT( EV_GetMana,              idEntity::Event_GetMana   )
 // bdube: mesh events
 	EVENT( EV_HideSurface,			idEntity::Event_HideSurface )
 	EVENT( EV_ShowSurface,			idEntity::Event_ShowSurface )
@@ -220,6 +223,7 @@ ABSTRACT_DECLARATION( idClass, idEntity )
 	EVENT( EV_RemoveTarget,			idEntity::Event_RemoveTarget )
 // mekberg: added
 	EVENT( EV_SetHealth,			idEntity::Event_SetHealth )
+	EVENT( EV_SetMana,              idEntity::Event_SetMana   )
 // RAVEN END
 END_CLASS
 
@@ -491,6 +495,7 @@ idEntity::idEntity() {
 	renderView		= NULL;
 	cameraTarget	= NULL;
 	health			= 0;
+	mana            = 0;
 
 	physics			= NULL;
 	bindMaster		= NULL;
@@ -642,6 +647,7 @@ void idEntity::Spawn( void ) {
 	}
 
 	health = spawnArgs.GetInt( "health" );
+	mana = 100;
 
 	InitDefaultPhysics( origin, axis );
 
@@ -4459,6 +4465,15 @@ void idEntity::Event_GetHealth ( void ) {
 	idThread::ReturnFloat( health );
 }
 
+/*
+================
+idEntity::Event_GetMana
+================
+*/
+void idEntity::Event_GetMana(void) {
+	idThread::ReturnFloat(mana);
+}
+
 // jscott:
 /*
 ================
@@ -4890,6 +4905,15 @@ idEntity::Event_SetHealth
 */
 void idEntity::Event_SetHealth( float newHealth ) {
 	health =  newHealth;
+}
+
+/*
+================
+idEntity::Event_SetHealth
+================
+*/
+void idEntity::Event_SetMana(float newMana) {
+	mana = newMana;
 }
 // RAVEN END
 
@@ -6195,6 +6219,7 @@ void idEntity::GetDebugInfo ( debugInfoProc_t proc, void* userData ) {
 	// Base class first
 	idClass::GetDebugInfo ( proc, userData );
 
+	proc ( "idEntity", "mana", va("%d", mana), userData); //no idea if this works, the hell is userData in this context and if it reads from save file i am cooked.
 	proc ( "idEntity", "health",		va("%d",health), userData );
 	proc ( "idEntity", "name",			name, userData );
 	proc ( "idEntity", "entityNumber",  va("%d",entityNumber), userData );

@@ -398,6 +398,7 @@ rvWeaponBlaster::State_Fire
 ================
 */
 stateResult_t rvWeaponBlaster::State_Fire ( const stateParms_t& parms ) {
+	idPlayer* p = gameLocal.GetLocalPlayer(); 
 	enum {
 		FIRE_INIT,
 		FIRE_WAIT,
@@ -424,16 +425,16 @@ stateResult_t rvWeaponBlaster::State_Fire ( const stateParms_t& parms ) {
 				return SRESULT_DONE;
 			}
 
-
-	
-			if ( gameLocal.time - fireHeldTime > chargeTime ) {	
+			if ( gameLocal.time - fireHeldTime > chargeTime && p->mana >= 5) {	
 				Attack ( true, 1, spread, 0, 1.0f );
 				PlayEffect ( "fx_chargedflash", barrelJointView, false );
 				PlayAnim( ANIMCHANNEL_ALL, "chargedfire", parms.blendFrames );
-			} else {
+				p->mana -= 5;
+			} else if (p->mana >= 1) {
 				Attack ( false, 1, spread, 0, 1.0f );
 				PlayEffect ( "fx_normalflash", barrelJointView, false );
 				PlayAnim( ANIMCHANNEL_ALL, "fire", parms.blendFrames );
+				p->mana -= 1;
 			}
 			fireHeldTime = 0;
 			

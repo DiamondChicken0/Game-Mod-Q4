@@ -48,6 +48,8 @@ idCVar net_showPredictionError( "net_showPredictionError", "-1", CVAR_INTEGER | 
 bool g_ObjectiveSystemOpen = false;
 #endif
 
+int manaTicks = 0;
+
 // distance between ladder rungs (actually is half that distance, but this sounds better)
 const int LADDER_RUNG_DISTANCE = 32;
 
@@ -3397,8 +3399,11 @@ void idPlayer::UpdateHudStats( idUserInterface *_hud ) {
 		_hud->SetStateInt   ( "player_healthDelta", temp == -1 ? 0 : (temp - health) );
 		_hud->SetStateInt	( "player_health", health < -100 ? -100 : health );
 		_hud->SetStateFloat	( "player_healthpct", idMath::ClampFloat ( 0.0f, 1.0f, (float)health / (float)inventory.maxHealth ) );
+		_hud->SetStateFloat ( "player_manapct", idMath::ClampFloat(0.0f, 1.0f, (float)mana / (float)100));
 		_hud->HandleNamedEvent ( "updateHealth" );
 	}
+
+	_hud->SetStateInt("player_mana", mana); 
 		
 	temp = _hud->State().GetInt ( "player_armor", "-1" );
 	if ( temp != inventory.armor ) {
@@ -7209,6 +7214,7 @@ void idPlayer::UpdateFocus( void ) {
 				}
 
 				ui->SetStateString( "player_health", va("%i", health ) );
+				ui->SetStateString( "player_mana", va( "%i", mana) );
 				ui->SetStateString( "player_armor", va( "%i%%", inventory.armor ) );
 
 				kv = ent->spawnArgs.MatchPrefix( "gui_", NULL );
@@ -9284,7 +9290,12 @@ Called every tic for each player
 */
 void idPlayer::Think( void ) {
 	renderEntity_t *headRenderEnt;
- 
+	idPlayer* player = gameLocal.GetLocalPlayer(); 
+	if (manaTicks % 30 == 0 && player->mana < 100)
+	{
+		player->mana += 1;
+	}
+	manaTicks += 1;
 	if ( talkingNPC ) {
 		if ( !talkingNPC.IsValid() ) {
 			talkingNPC = NULL;

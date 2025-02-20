@@ -3,6 +3,90 @@
   "WorkspaceRootPath": "C:\\Users\\ogore\\Game-Mod-Q4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\physics\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Force.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\physics\\Force.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Trigger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Trigger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Sound.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Sound.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponShotgun.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponShotgun.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\USERS\\OGORE\\GAME-MOD-Q4\\MPGAME\\SCRIPT\\SCRIPT_PROGRAM.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:MPGAME\\SCRIPT\\SCRIPT_PROGRAM.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\mp\\stats\\StatEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\mp\\stats\\StatEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\client\\ClientEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\client\\ClientEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player_States.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Player_States.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\gamesys\\Class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\client\\ClientModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\PlayerView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\PlayerView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\gamesys\\SysCmds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -23,24 +107,8 @@
       "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\ai\\Monster_Berserker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ogore\\Game-Mod-Q4\\renderer\\RenderWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:renderer\\RenderWorld.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\gamesys\\Class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -66,145 +134,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SysCmds.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp",
-              "RelativeDocumentMoniker": "game\\gamesys\\SysCmds.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp*",
-              "RelativeToolTip": "game\\gamesys\\SysCmds.cpp*",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAUwFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T19:47:16.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AI_events.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI_events.cpp",
-              "RelativeDocumentMoniker": "game\\ai\\AI_events.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI_events.cpp",
-              "RelativeToolTip": "game\\ai\\AI_events.cpp",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAEwLgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-17T23:01:05.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AI.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI.cpp",
-              "RelativeDocumentMoniker": "game\\ai\\AI.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI.cpp",
-              "RelativeToolTip": "game\\ai\\AI.cpp",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-17T23:01:02.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "spawner.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\spawner.cpp",
-              "RelativeDocumentMoniker": "game\\spawner.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\spawner.cpp",
-              "RelativeToolTip": "game\\spawner.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-17T23:00:49.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Monster_Berserker.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\Monster_Berserker.cpp",
-              "RelativeDocumentMoniker": "game\\ai\\Monster_Berserker.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\Monster_Berserker.cpp",
-              "RelativeToolTip": "game\\ai\\Monster_Berserker.cpp",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Physics.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Physics.cpp",
+              "RelativeDocumentMoniker": "game\\physics\\Physics.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Physics.cpp",
+              "RelativeToolTip": "game\\physics\\Physics.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-17T22:59:33.567Z",
+              "WhenOpened": "2025-02-20T18:55:32.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Force.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Force.cpp",
+              "RelativeDocumentMoniker": "game\\physics\\Force.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\physics\\Force.cpp",
+              "RelativeToolTip": "game\\physics\\Force.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T18:55:30.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Trigger.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Trigger.h",
+              "RelativeDocumentMoniker": "game\\Trigger.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Trigger.h",
+              "RelativeToolTip": "game\\Trigger.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-20T18:55:14.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Weapon.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Weapon.h",
+              "RelativeDocumentMoniker": "game\\Weapon.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Weapon.h",
+              "RelativeToolTip": "game\\Weapon.h",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-20T18:31:28.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp",
+              "RelativeDocumentMoniker": "game\\Player.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp",
+              "RelativeToolTip": "game\\Player.cpp",
+              "ViewState": "AgIAAEUkAAAAAAAAAAAMwFIkAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T20:14:23.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "WeaponBlaster.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp",
               "RelativeDocumentMoniker": "game\\weapon\\WeaponBlaster.cpp",
               "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponBlaster.cpp",
               "RelativeToolTip": "game\\weapon\\WeaponBlaster.cpp",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAKYBAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAI8BAAAAAAAAAAAcwJABAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-23T20:02:23.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp",
-              "RelativeDocumentMoniker": "game\\Player.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.cpp",
-              "RelativeToolTip": "game\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T20:14:23.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SaveGame.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp",
-              "RelativeDocumentMoniker": "game\\gamesys\\SaveGame.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp",
-              "RelativeToolTip": "game\\gamesys\\SaveGame.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T19:47:11.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Class.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp",
-              "RelativeDocumentMoniker": "game\\gamesys\\Class.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp",
-              "RelativeToolTip": "game\\gamesys\\Class.cpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T19:47:07.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Simd.cpp",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\idlib\\math\\Simd.cpp",
-              "RelativeDocumentMoniker": "idlib\\math\\Simd.cpp",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\idlib\\math\\Simd.cpp",
-              "RelativeToolTip": "idlib\\math\\Simd.cpp",
-              "ViewState": "AgIAAMkFAAAAAAAAAAAwwNUFAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T19:41:42.129Z"
+              "DocumentIndex": 2,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.h",
+              "RelativeDocumentMoniker": "game\\Player.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player.h",
+              "RelativeToolTip": "game\\Player.h",
+              "ViewState": "AgIAACMBAAAAAAAAAAAowDIBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:32:29.492Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RenderWorld.h",
-              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\renderer\\RenderWorld.h",
-              "RelativeDocumentMoniker": "renderer\\RenderWorld.h",
-              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\renderer\\RenderWorld.h",
-              "RelativeToolTip": "renderer\\RenderWorld.h",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Title": "Sound.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Sound.cpp",
+              "RelativeDocumentMoniker": "game\\Sound.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Sound.cpp",
+              "RelativeToolTip": "game\\Sound.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T18:55:06.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeaponShotgun.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponShotgun.cpp",
+              "RelativeDocumentMoniker": "game\\weapon\\WeaponShotgun.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\weapon\\WeaponShotgun.cpp",
+              "RelativeToolTip": "game\\weapon\\WeaponShotgun.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAowIsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T18:29:37.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.h",
+              "RelativeDocumentMoniker": "game\\Entity.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.h",
+              "RelativeToolTip": "game\\Entity.h",
+              "ViewState": "AgIAAJsCAAAAAAAAAAAowKYCAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-23T19:23:20.318Z"
+              "WhenOpened": "2025-02-20T17:11:42.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -216,11 +276,239 @@
               "RelativeToolTip": "game\\Weapon.cpp",
               "ViewState": "AgIAADgCAAAAAAAAAAAAAEwCAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T18:38:24.685Z"
+              "WhenOpened": "2025-01-23T18:38:24.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.cpp",
+              "RelativeDocumentMoniker": "game\\Entity.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Entity.cpp",
+              "RelativeToolTip": "game\\Entity.cpp",
+              "ViewState": "AgIAAGoRAAAAAAAAAAAowHIRAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T17:25:05.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "Script_Program.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\mpgame\\script\\Script_Program.h",
+              "RelativeDocumentMoniker": "mpgame\\script\\Script_Program.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\mpgame\\script\\Script_Program.h",
+              "RelativeToolTip": "mpgame\\script\\Script_Program.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-20T17:22:00.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StatEvent.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\mp\\stats\\StatEvent.h",
+              "RelativeDocumentMoniker": "game\\mp\\stats\\StatEvent.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\mp\\stats\\StatEvent.h",
+              "RelativeToolTip": "game\\mp\\stats\\StatEvent.h",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAMwFkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:38:32.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientEntity.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEntity.h",
+              "RelativeDocumentMoniker": "game\\client\\ClientEntity.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEntity.h",
+              "RelativeToolTip": "game\\client\\ClientEntity.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:25:46.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Player_States.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player_States.cpp",
+              "RelativeDocumentMoniker": "game\\Player_States.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Player_States.cpp",
+              "RelativeToolTip": "game\\Player_States.cpp",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T19:26:53.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClientEffect.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEffect.h",
+              "RelativeDocumentMoniker": "game\\client\\ClientEffect.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientEffect.h",
+              "RelativeToolTip": "game\\client\\ClientEffect.h",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:25:38.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClientModel.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientModel.h",
+              "RelativeDocumentMoniker": "game\\client\\ClientModel.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\client\\ClientModel.h",
+              "RelativeToolTip": "game\\client\\ClientModel.h",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:26:16.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayerView.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.cpp",
+              "RelativeDocumentMoniker": "game\\PlayerView.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.cpp",
+              "RelativeToolTip": "game\\PlayerView.cpp",
+              "ViewState": "AgIAABgCAAAAAAAAAAAowCcCAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T19:24:15.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PlayerView.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.h",
+              "RelativeDocumentMoniker": "game\\PlayerView.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\PlayerView.h",
+              "RelativeToolTip": "game\\PlayerView.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T19:23:42.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Class.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp",
+              "RelativeDocumentMoniker": "game\\gamesys\\Class.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\Class.cpp",
+              "RelativeToolTip": "game\\gamesys\\Class.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T19:47:07.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SysCmds.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp",
+              "RelativeDocumentMoniker": "game\\gamesys\\SysCmds.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SysCmds.cpp",
+              "RelativeToolTip": "game\\gamesys\\SysCmds.cpp",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T19:47:16.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AI.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI.cpp",
+              "RelativeDocumentMoniker": "game\\ai\\AI.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI.cpp",
+              "RelativeToolTip": "game\\ai\\AI.cpp",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T23:01:02.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "spawner.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\spawner.cpp",
+              "RelativeDocumentMoniker": "game\\spawner.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\spawner.cpp",
+              "RelativeToolTip": "game\\spawner.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T23:00:49.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Monster_Berserker.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\Monster_Berserker.cpp",
+              "RelativeDocumentMoniker": "game\\ai\\Monster_Berserker.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\Monster_Berserker.cpp",
+              "RelativeToolTip": "game\\ai\\Monster_Berserker.cpp",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T22:59:33.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AI_events.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI_events.cpp",
+              "RelativeDocumentMoniker": "game\\ai\\AI_events.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\ai\\AI_events.cpp",
+              "RelativeToolTip": "game\\ai\\AI_events.cpp",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAEwLgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T23:01:05.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SaveGame.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp",
+              "RelativeDocumentMoniker": "game\\gamesys\\SaveGame.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\gamesys\\SaveGame.cpp",
+              "RelativeToolTip": "game\\gamesys\\SaveGame.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T19:47:11.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Simd.cpp",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\idlib\\math\\Simd.cpp",
+              "RelativeDocumentMoniker": "idlib\\math\\Simd.cpp",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\idlib\\math\\Simd.cpp",
+              "RelativeToolTip": "idlib\\math\\Simd.cpp",
+              "ViewState": "AgIAAMkFAAAAAAAAAAAwwNUFAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-23T19:41:42.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RenderWorld.h",
+              "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\renderer\\RenderWorld.h",
+              "RelativeDocumentMoniker": "renderer\\RenderWorld.h",
+              "ToolTip": "C:\\Users\\ogore\\Game-Mod-Q4\\renderer\\RenderWorld.h",
+              "RelativeToolTip": "renderer\\RenderWorld.h",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-23T19:23:20.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Game.def",
               "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\game\\Game.def",
               "RelativeDocumentMoniker": "game\\Game.def",
@@ -232,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 30,
               "Title": "LangDict.cpp",
               "DocumentMoniker": "C:\\Users\\ogore\\Game-Mod-Q4\\idlib\\LangDict.cpp",
               "RelativeDocumentMoniker": "idlib\\LangDict.cpp",
