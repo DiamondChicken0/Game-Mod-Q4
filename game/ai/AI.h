@@ -1260,9 +1260,9 @@ ID_INLINE int idAI::GetTravelFlags ( void ) const {
 	return move.travelFlags;
 }
 
-ID_INLINE bool idAI::IsEnemyVisible ( void ) const {
+/*ID_INLINE bool idAI::IsEnemyVisible(void) const {
 	return enemy.ent && enemy.fl.visible;
-}
+}*/ //testing
 
 ID_INLINE bool idAI::IsEnemyRecentlyVisible( float maxLostVisTimeScale ) const {
 	return (enemy.ent

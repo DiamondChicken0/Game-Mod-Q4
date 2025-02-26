@@ -159,6 +159,14 @@ idAI::~idAI() {
 	SetPhysics( NULL );
 }
 
+
+bool idAI::IsEnemyVisible(void) const { //*()
+	idPlayer* player = gameLocal.GetLocalPlayer();
+	if (!player->stealthy)
+		return false;
+	return enemy.ent && enemy.fl.visible;
+}
+
 /*
 =====================
 idAI::Save
@@ -1471,6 +1479,11 @@ idAI::ReactionTo
 =====================
 */
 int idAI::ReactionTo( const idEntity *ent ) {
+
+	idPlayer* player = gameLocal.GetLocalPlayer();
+
+	if (!player->stealthy)
+		return ATTACK_IGNORE;
 
 	if ( ent->fl.hidden ) {
 		// ignore hidden entities
@@ -3076,8 +3089,8 @@ idEntity *idAI::HeardSound( int ignore_team ){
 		idVec3 pos = actor->GetPhysics()->GetOrigin();
 		idVec3 org = physicsObj.GetOrigin();
 		float dist = ( pos - org ).LengthSqr();
-		
-		if ( dist < Square( combat.earRange ) ) {
+		idPlayer* player = gameLocal.GetLocalPlayer();
+		if ( dist < Square( combat.earRange )  && false) { //*() IMPLEMENT
 			//really close?
 			if ( dist < Square( combat.earRange/4.0f ) ) {		
 				return actor;
