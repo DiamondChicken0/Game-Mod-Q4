@@ -632,6 +632,13 @@ idItem::Pickup
 */
 bool idItem::Pickup( idPlayer *player ) {
 	//dropped weapon?
+	gameLocal.Printf("Picked up %s", name.c_str());
+	idPlayer* p = gameLocal.GetLocalPlayer();
+
+	if (name == "item_health_small_moveable_1")
+	{
+		p->itemFound = true;
+	}
 	bool dropped = spawnArgs.GetBool( "dropped" );
 
 	if ( gameLocal.isMultiplayer && !dropped && spawnArgs.FindKey( "weaponclass" ) 

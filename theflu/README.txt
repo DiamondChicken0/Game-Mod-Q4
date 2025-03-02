@@ -7,18 +7,6 @@
 |												  |
 ===================================================
 
-    _--     --_
-   /           \
-  |             |
-   \    /|\    /
-	\    |    /
-	  \  |  /
-       =====
-		 |
-		\|/
-
-The Quake 4 logo not a lightbulb
-
 The mod folder is called "theflu" and the original version that I than copy into my Quake 4 game folder is in the repository
 Repo: https://github.com/DiamondChicken0/Game-Mod-Q4/tree/main
 Branch: main
@@ -78,15 +66,10 @@ DELIVERABLES:
 		Bottles can be found that enhance your next rock throw by making it so they stick around an area for 15 seconds instead of 5
 		Mana Potions recover your mana instantly
 		
-		
-		
-
-✖	3 Different Side Objectives 
+✔	3 Different Side Objectives 
 	
-	What I'm planning:
-	
-		A defined number of a given enemy type has to be killed
-		A randomly assigned enemy is given target status where a side objective is to kill the target
+		A defined number of enemies have to be killed
+		An assigned character has to be killed
 		A key item has to be found in the map
 	
 	
@@ -98,8 +81,6 @@ DELIVERABLES:
 	Its in the Quake 4 folder and copies are made in the mod folder (theflu). The shortcut is very cool and useful.
 	
 ✔	All custom assets (def files, models, sounds, etc) placed in a pak001.pak file
-	I made a bash script that automatically makes a pk4 out of what you feed it using the tar command. Thank you CS 288
-	I will include it in the mod folder (theflu)
 	
 ✖	An In-Game Help Screen to explain your mod
 	

@@ -284,6 +284,11 @@ public:
 
 	usercmd_t				usercmd;
 
+	int kills = 0;
+	bool itemFound = false;
+	bool targetKilled = false;
+
+
 	class idPlayerView		playerView;			// handles damage kicks and effects
 
 	bool					alreadyDidTeamAnnouncerSound;

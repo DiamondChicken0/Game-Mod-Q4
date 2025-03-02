@@ -50,6 +50,9 @@ bool g_ObjectiveSystemOpen = false;
 
 int manaTicks = 0; //*()
 bool stealthy = false;
+int kills = 0;
+bool itemFound = false;
+bool targetKilled = false;
 
 // distance between ladder rungs (actually is half that distance, but this sounds better)
 const int LADDER_RUNG_DISTANCE = 32;
@@ -3394,6 +3397,33 @@ void idPlayer::UpdateHudStats( idUserInterface *_hud ) {
 	int temp;
 	
 	assert ( _hud );
+
+	if (kills < 5)
+	{
+		_hud->SetStateString("player_sideobj1", "Kill 5 Enemies");
+	}
+	else
+	{
+		_hud->SetStateString("player_sideobj1", "Objective Completed");
+	}
+	
+	if (!targetKilled)
+	{
+		_hud->SetStateString("player_sideobj2", "Steve Must Die!");
+	}
+	else
+	{
+		_hud->SetStateString("player_sideobj2", "Steve Has Died :(");
+	}
+	
+	if (!itemFound)
+	{
+		_hud->SetStateString("player_sideobj3", "Find the Key");
+	}
+	else
+	{
+		_hud->SetStateString("player_sideobj3", "You Found The Key!");
+	}
 
 	temp = _hud->State().GetInt ( "player_health", "-1" );
 	if ( temp != health ) {		

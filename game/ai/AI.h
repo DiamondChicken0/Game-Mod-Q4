@@ -437,6 +437,8 @@ public:
 							idAI();
 							~idAI();
 
+	void                    MakeTarget();
+
 	void					Save							( idSaveGame *savefile ) const;
 	void					Restore							( idRestoreGame *savefile );
 
@@ -481,6 +483,7 @@ public:
 
 public:
 
+	bool                    target;
 	idLinkList<idAI>		simpleThinkNode;
 
 	// navigation

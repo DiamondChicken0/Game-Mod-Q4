@@ -42,6 +42,15 @@ idAI::idAI
 =====================
 */
 idAI::idAI ( void ) {
+
+	if (name.c_str() == "monster_strogg_marine_3") //*()
+	{
+		target = true;
+	}
+	else
+	{
+		target = false;
+	}
 	projectile_height_to_distance_ratio = 1.0f;
 
 	aas						= NULL;
@@ -158,8 +167,9 @@ idAI::~idAI() {
 	aiManager.RemoveTeammate ( this );
 	SetPhysics( NULL );
 }
-
-
+void idAI::MakeTarget() {
+	target = true;
+}
 bool idAI::IsEnemyVisible(void) const { //*()
 	idPlayer* player = gameLocal.GetLocalPlayer();
 	if (!player->stealthy)
@@ -1480,10 +1490,10 @@ idAI::ReactionTo
 */
 int idAI::ReactionTo( const idEntity *ent ) {
 
-	idPlayer* player = gameLocal.GetLocalPlayer();
+	//idPlayer* player = gameLocal.GetLocalPlayer();
 
-	if (!player->stealthy)
-		return ATTACK_IGNORE;
+	//if (!player->stealthy)
+		//return ATTACK_IGNORE;
 
 	if ( ent->fl.hidden ) {
 		// ignore hidden entities
@@ -3680,6 +3690,20 @@ idAI::
 */
 
 void idAI::OnDeath( void ){
+
+	idPlayer* player = gameLocal.GetLocalPlayer();
+	gameLocal.Printf("%s has been killed ", name.c_str());
+	if (target || name == "monster_strogg_marine_3")
+	{
+		player->targetKilled = true;
+		gameLocal.Printf("Target Killed\n");
+	}
+	if (enemy.ent == gameLocal.GetLocalPlayer()) //*()
+	{
+		player->kills = player->kills + 1;
+		gameLocal.Printf("Killed an Enemy\n");
+		gameLocal.Printf("New Kills: %u\n", player->kills);
+	}
 	if( vehicleController.IsDriving() ){
 		usercmd_t				usercmd;
 
