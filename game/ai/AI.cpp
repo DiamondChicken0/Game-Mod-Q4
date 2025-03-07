@@ -1148,6 +1148,10 @@ bool idAI::DoDormantTests ( void ) {
 	return idActor::DoDormantTests ( );
 }
 
+bool idAI::isDead(void)
+{
+	return aifl.dead;
+}
 /*
 =====================
 idAI::Think

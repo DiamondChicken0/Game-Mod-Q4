@@ -311,6 +311,9 @@ public:
 
 	int                     manaTicks; //*()
 	bool                    stealthy; 
+	int ticksSinceInput;
+	char inputs[3];
+	bool manaFatigue;
 
 	struct playerFlags_s {
 		bool		forward			:1;

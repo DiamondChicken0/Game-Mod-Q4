@@ -1500,6 +1500,10 @@ void idPlayer::SetupWeaponEntity( void ) {
 idPlayer::Init
 ==============
 */
+void idPlayer::Spells()
+{
+	while (true)
+}
 void idPlayer::Init( void ) {
 	const char			*value;
 	const idDict		*userInfo = GetUserInfo();

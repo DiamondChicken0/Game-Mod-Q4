@@ -397,6 +397,24 @@ void Cmd_KillRagdolls_f( const idCmdArgs &args ) {
 // RITUAL BEGIN
 // squirrel: added DeadZone multiplayer mode
 /*
+void Cmd_whats_that(const idCmdArgs& args)
+{
+	idDict dict;
+	idPlayer* player;
+	idEntity* ent;
+	idVec3 forward;
+
+	player = gameLocal.GetLocalPlayer();
+	if (!player || !gameLocal.CheatsOk())
+		return;
+
+	dict.SetInt("range", 4000);
+	player->viewAngles.ToVectors(&forward, NULL, NULL);
+	gameLocal.HitScan(dict, player->firstPersonViewOrigin, forward, player->firstPersonViewOrigin, player);
+	if (ent)
+		gameLocal.Printf(ent->GetClassname());
+}*/
+/*
 ==================
 GiveStuffToPlayer
 

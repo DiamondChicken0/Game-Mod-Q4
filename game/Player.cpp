@@ -49,10 +49,13 @@ bool g_ObjectiveSystemOpen = false;
 #endif
 
 int manaTicks = 0; //*()
+bool manaFatigue = false;
 bool stealthy = false;
 int kills = 0;
 bool itemFound = false;
 bool targetKilled = false;
+int ticksSinceInput = 0;
+char inputs[3] = { NULL,NULL,NULL };
 
 // distance between ladder rungs (actually is half that distance, but this sounds better)
 const int LADDER_RUNG_DISTANCE = 32;
@@ -8497,6 +8500,131 @@ void idPlayer::PerformImpulse( int impulse ) {
 		return;
 	}
 
+	if (ticksSinceInput > 120)
+	{
+		inputs[0] = inputs[1] = inputs[2] = NULL;
+		ticksSinceInput = 0;
+	}
+	if (impulse == IMPULSE_16)
+	{
+		gameLocal.Printf("J has been pressed \n");
+		if (inputs[0] != NULL)
+		{
+			if (inputs[1] != NULL)
+			{
+				if (inputs[2] != NULL)
+				{
+					inputs[0] = inputs[1] = inputs[2] = NULL;
+					inputs[0] = 'j';
+				}
+				else
+					inputs[2] = 'j';
+			}
+			else
+				inputs[1] = 'j';
+		}
+		else
+			inputs[0] = 'j';
+	}
+	if (impulse == IMPULSE_23)
+	{
+		gameLocal.Printf("K has been pressed \n");
+		if (inputs[0] != NULL)
+		{
+			if (inputs[1] != NULL)
+			{
+				if (inputs[2] != NULL)
+				{
+					inputs[0] = inputs[1] = inputs[2] = NULL;
+					inputs[0] = 'k';
+				}
+				else
+					inputs[2] = 'k';
+			}
+			else
+				inputs[1] = 'k';
+		}
+		else
+			inputs[0] = 'k';
+	}
+
+	if (inputs[2] != NULL)
+	{
+		if (inputs[0] == 'j') // j
+		{
+			if (inputs[1] == 'j') // jj
+			{
+				if (inputs[2] == 'k') // jjk
+				{
+					// Teleport
+					gameLocal.Printf("Casting Teleport");
+				}
+			}
+			else // jk
+			{
+				if (inputs[2] == 'j') //jkj
+				{
+					// Personal Space
+					gameLocal.Printf("Casting Personal Space");
+				}
+				else // jkk
+				{
+					// In-fighting
+					gameLocal.Printf("Casting In-Fight");
+					idEntity* closest;
+					float closestDistance;
+					for (int i = 0; i < MAX_GENTITIES; i++)
+					{
+						idEntity* ent = gameLocal.entities[i];
+						if (ent != NULL && ent->name.c_str()[0] == 'm' && ent->name.c_str()[7] == '_' && ent->health > 0 && !ent->CheckDormant() && !ent->CanTakeDamage() && ent->IsActive())
+						{
+							if (closest != NULL)
+							{
+								if (ent->DistanceTo(firstPersonViewOrigin) < closestDistance)
+								{
+									closest = ent;
+									closestDistance = ent->DistanceTo(firstPersonViewOrigin);
+								}
+							}
+							else
+							{
+								closest = ent;
+								closestDistance = ent->DistanceTo(firstPersonViewOrigin);
+							}
+						}
+					}
+					gameLocal.Printf("%s has been chosen for in-fighting ", closest->name.c_str());
+				}
+			}
+		}
+		else // k
+		{
+			if (inputs[1] == 'j') //kj
+			{
+				if (inputs[2] == 'k') // kjk
+				{
+					// Heal
+					if (mana >= 90)
+					{
+						gameLocal.Printf("Casting Heal");
+						manaFatigue = true;
+						health = (health + 75 < 100) ? health + 75 : 100;
+						mana -= 90;
+					}
+				}
+			}
+			else // kk
+			{
+				if (inputs[2] == 'j') // kkj
+				{
+					// invisible 
+					gameLocal.Printf("Casting Invisible");
+				}
+			}
+		}
+		inputs[0] = inputs[1] = inputs[2] = NULL;
+	}
+
 //RAVEN BEGIN
 //asalmon: D-pad events for in game guis on Xenon
 #ifdef _XBOX
@@ -9322,11 +9450,12 @@ Called every tic for each player
 void idPlayer::Think( void ) {
 	renderEntity_t *headRenderEnt;
 	idPlayer* player = gameLocal.GetLocalPlayer(); 
-	if (manaTicks % 30 == 0 && player->mana < 100)
+	if (manaTicks % 30 == 0 && player->mana < 100 && !player->manaFatigue)
 	{
 		player->mana += 1;
 	}
 	manaTicks += 1;
+	ticksSinceInput += 1;
 	if ( talkingNPC ) {
 		if ( !talkingNPC.IsValid() ) {
 			talkingNPC = NULL;

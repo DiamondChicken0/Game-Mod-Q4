@@ -638,6 +638,7 @@ bool idItem::Pickup( idPlayer *player ) {
 	if (name == "item_health_small_moveable_1")
 	{
 		p->itemFound = true;
+		p->manaFatigue = false;
 	}
 	bool dropped = spawnArgs.GetBool( "dropped" );
 

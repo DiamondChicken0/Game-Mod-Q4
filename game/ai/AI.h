@@ -699,7 +699,7 @@ public:
 	*/
 
 public:
-
+	bool isDead(void);
 	void					UpdateHelper					( void );
 	rvAIHelper*				GetActiveHelper					( void );
 

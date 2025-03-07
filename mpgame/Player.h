@@ -270,16 +270,16 @@ public:
 class idPlayer : public idActor {
 public:
 
- 	enum {
- 		EVENT_IMPULSE = idEntity::EVENT_MAXEVENTS,
- 		EVENT_EXIT_TELEPORTER,
- 		EVENT_ABORT_TELEPORTER,
- 		EVENT_POWERUP,
- 		EVENT_SPECTATE,
+	enum {
+		EVENT_IMPULSE = idEntity::EVENT_MAXEVENTS,
+		EVENT_EXIT_TELEPORTER,
+		EVENT_ABORT_TELEPORTER,
+		EVENT_POWERUP,
+		EVENT_SPECTATE,
 		EVENT_EMOTE,
 		EVENT_JUMP,
- 		EVENT_MAXEVENTS
- 	};
+		EVENT_MAXEVENTS
+	};
 
 	friend class idThread;
 
@@ -287,6 +287,9 @@ public:
 
 	class idPlayerView		playerView;			// handles damage kicks and effects
 
+	int ticksSinceInput;
+	char inputs[3];
+	bool manaFatigue;
 	bool					alreadyDidTeamAnnouncerSound;
 	bool					noclip;
 	bool					godmode;
