@@ -1356,7 +1356,7 @@ idEntity::IsHidden
 ================
 */
 bool idEntity::IsHidden( void ) const {
-	return fl.hidden;
+	return fl.hidden; //*()
 }
 
 /*

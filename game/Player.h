@@ -270,6 +270,8 @@ public:
 class idPlayer : public idActor {
 public:
 
+	int invisibleTimer;
+
  	enum {
  		EVENT_IMPULSE = idEntity::EVENT_MAXEVENTS,
  		EVENT_EXIT_TELEPORTER,
@@ -310,7 +312,7 @@ public:
 	int						lastSavingThrowTime;	// for the "free miss" effect
 
 	int                     manaTicks; //*()
-	bool                    stealthy; 
+	int                    stealthy; 
 	int ticksSinceInput;
 	char inputs[3];
 	bool manaFatigue;

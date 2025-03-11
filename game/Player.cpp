@@ -48,9 +48,11 @@ idCVar net_showPredictionError( "net_showPredictionError", "-1", CVAR_INTEGER | 
 bool g_ObjectiveSystemOpen = false;
 #endif
 
-int manaTicks = 0; //*()
+int mana = 100;
+int manaTicks = 1; //*()
 bool manaFatigue = false;
-bool stealthy = false;
+int invisibleTimer;
+int stealthy = 0;
 int kills = 0;
 bool itemFound = false;
 bool targetKilled = false;
@@ -3433,10 +3435,9 @@ void idPlayer::UpdateHudStats( idUserInterface *_hud ) {
 		_hud->SetStateInt   ( "player_healthDelta", temp == -1 ? 0 : (temp - health) );
 		_hud->SetStateInt	( "player_health", health < -100 ? -100 : health );
 		_hud->SetStateFloat	( "player_healthpct", idMath::ClampFloat ( 0.0f, 1.0f, (float)health / (float)inventory.maxHealth ) );
-		_hud->SetStateFloat ( "player_manapct", idMath::ClampFloat(0.0f, 1.0f, (float)mana / (float)100));
 		_hud->HandleNamedEvent ( "updateHealth" );
 	}
-
+	_hud->SetStateFloat("player_manapct", idMath::ClampFloat(0.0f, 1.0f, (float)mana / (float)100));
 	_hud->SetStateInt("player_mana", mana); 
 		
 	temp = _hud->State().GetInt ( "player_armor", "-1" );
@@ -8557,7 +8558,12 @@ void idPlayer::PerformImpulse( int impulse ) {
 				if (inputs[2] == 'k') // jjk
 				{
 					// Teleport
-					gameLocal.Printf("Casting Teleport");
+					if (mana >= 20)
+					{
+						gameLocal.Printf("Casting Teleport");
+						Teleport(physicsObj.GetOrigin() + (physicsObj.GetLinearVelocity().ToNormal() * 300), physicsObj.GetLinearVelocity().ToAngles(), NULL);
+						mana -= 20;
+					}
 				}
 			}
 			else // jk
@@ -8565,35 +8571,74 @@ void idPlayer::PerformImpulse( int impulse ) {
 				if (inputs[2] == 'j') //jkj
 				{
 					// Personal Space
-					gameLocal.Printf("Casting Personal Space");
+					if (mana >= 50)
+					{
+						mana -= 50;
+						gameLocal.Printf("Casting Personal Space");
+						float personalBubble = 200.0f;
+						for (int i = 0; i < MAX_GENTITIES; i++)
+						{
+							idEntity* ent = gameLocal.entities[i];
+							if (!ent)
+							{
+								continue;
+							}
+							if (!ent->IsActive() && !ent->GetPhysics() && !ent->CanTakeDamage() , ent->GetClassname() != "rvMonsterStroggMarine")
+							{
+								continue;
+							}
+							// ent->IsActive() && ent != gameLocal.GetLocalPlayer() && ent->fl.takedamage && 
+							if (ent->DistanceTo2d(physicsObj.GetOrigin()) < personalBubble)
+							{
+								gameLocal.Printf("Killing %s of type %s\n", ent->name.c_str(), ent->GetClassname());
+								ent->Killed(this, this, 9999, idVec3(0, 0, 0), 1);
+								gameLocal.Printf("%s: %f\n", ent->name.c_str(), ent->DistanceTo2d(physicsObj.GetOrigin()));
+							}
+							/*else
+							{
+								gameLocal.Printf("%s is too far away: %f\n", ent->name.c_str(), ent->DistanceTo2d(physicsObj.GetOrigin()));
+							}*/
+						}
+					}
 				}
 				else // jkk
 				{
 					// In-fighting
-					gameLocal.Printf("Casting In-Fight");
-					idEntity* closest;
-					float closestDistance;
-					for (int i = 0; i < MAX_GENTITIES; i++)
+					if (mana >= 30)
 					{
-						idEntity* ent = gameLocal.entities[i];
-						if (ent != NULL && ent->name.c_str()[0] == 'm' && ent->name.c_str()[7] == '_' && ent->health > 0 && !ent->CheckDormant() && !ent->CanTakeDamage() && ent->IsActive())
+						mana -= 30;
+						gameLocal.Printf("Casting In-Fight");
+						idEntity* closest = NULL;
+						float closestDistance;
+						for (int i = 0; i < MAX_GENTITIES; i++)
 						{
-							if (closest != NULL)
+							idEntity* ent = gameLocal.entities[i];
+							//0123456789
+							//monster_
+							//rvmonster
+							if (ent != NULL && ent->health > 0 && !ent->CheckDormant() && ent->CanTakeDamage() && ent->IsActive() && ent->GetClassname() == "rvMonsterStroggMarine")
 							{
-								if (ent->DistanceTo(firstPersonViewOrigin) < closestDistance)
+								if (closest != NULL)
+								{
+									if (ent->DistanceTo2d(physicsObj.GetOrigin()) < closestDistance)
+									{
+										closest = ent;
+										closestDistance = ent->DistanceTo2d(physicsObj.GetOrigin());
+									}
+								}
+								else
 								{
 									closest = ent;
-									closestDistance = ent->DistanceTo(firstPersonViewOrigin);
+									closestDistance = ent->DistanceTo2d(physicsObj.GetOrigin());
 								}
 							}
-							else
-							{
-								closest = ent;
-								closestDistance = ent->DistanceTo(firstPersonViewOrigin);
-							}
+						}
+						if (closest != NULL)
+						{
+							gameLocal.Printf("%s has been chosen for in-fighting\n", closest->name.c_str());
+							closest->JoinTeam(gameLocal.GetLocalPlayer()); //broken
 						}
 					}
-					gameLocal.Printf("%s has been chosen for in-fighting ", closest->name.c_str());
 				}
 			}
 		}
@@ -8618,7 +8663,15 @@ void idPlayer::PerformImpulse( int impulse ) {
 				if (inputs[2] == 'j') // kkj
 				{
 					// invisible 
-					gameLocal.Printf("Casting Invisible");
+					if (mana >= 40)
+					{
+						gameLocal.Printf("Casting Invisible");
+						Hide();
+						invisibleTimer = 300;
+						//GivePowerUp(POWERUP_INVISIBILITY, SEC2MS(10.0f)); Broken in single player
+						stealthy = 3;
+						mana -= 40;
+					}
 				}
 			}
 		}
@@ -9450,12 +9503,32 @@ Called every tic for each player
 void idPlayer::Think( void ) {
 	renderEntity_t *headRenderEnt;
 	idPlayer* player = gameLocal.GetLocalPlayer(); 
-	if (manaTicks % 30 == 0 && player->mana < 100 && !player->manaFatigue)
+	//gameLocal.Printf("%i,%i,%i", manaTicks % 30 == 0, mana < 100 && !player->manaFatigue);
+	if (manaTicks % 30 == 0 && mana < 100 && !manaFatigue)
 	{
 		player->mana += 1;
+		if (mana % 10 == 0)
+		{
+			gameLocal.Printf("Mana is now %i\n", mana);
+		}
 	}
+	if (invisibleTimer < 0)
+	{
+		Show();
+	}
+	invisibleTimer--;
 	manaTicks += 1;
 	ticksSinceInput += 1;
+
+	if (physicsObj.IsCrouching())
+	{
+		stealthy = 1;
+	}
+	else
+	{
+		stealthy = 0;
+	}
+
 	if ( talkingNPC ) {
 		if ( !talkingNPC.IsValid() ) {
 			talkingNPC = NULL;

@@ -170,12 +170,7 @@ idAI::~idAI() {
 void idAI::MakeTarget() {
 	target = true;
 }
-bool idAI::IsEnemyVisible(void) const { //*()
-	idPlayer* player = gameLocal.GetLocalPlayer();
-	if (!player->stealthy)
-		return false;
-	return enemy.ent && enemy.fl.visible;
-}
+
 
 /*
 =====================
@@ -1174,6 +1169,44 @@ void idAI::Think( void ) {
 		aiManager.timerThink.Start ( );
 	}
 
+	if (angry)
+	{
+		angry = false;
+		idEntity* closest;
+		float closestDistance;
+		for (int i = 0; i < MAX_GENTITIES; i++)
+		{
+			idEntity* en = gameLocal.entities[i];
+			if (en != NULL && en->name != name && ((en->name.c_str()[1] == 'o' && en->name.c_str()[7] == '_') || (en->name.c_str()[3] == 'o' && en->name.c_str()[8] == 'r')) && en->health > 0 && !en->CheckDormant() && en->CanTakeDamage() && en->IsActive())
+			{
+				if (closest != NULL)
+				{
+					if (en->DistanceTo(GetPhysics()->GetOrigin()) < closestDistance)
+					{
+						closest = en;
+						closestDistance = en->DistanceTo(GetPhysics()->GetOrigin());
+					}
+				}
+				else
+				{
+					closest = en;
+					closestDistance = en->DistanceTo(GetPhysics()->GetOrigin());
+				}
+			}
+		}
+		if (closest != NULL)
+		{
+			if (closest->GetName() == NULL)
+			{
+				gameLocal.Printf("Bad Target!\n");
+				return;
+			}
+
+			gameLocal.Printf("%s is the def name\n", closest->GetEntityDefName());
+			gameLocal.Printf("%s has been set as the target for in-fighting\n", closest->GetName());
+			SetEnemy(closest);
+		}
+	}
 	if ( thinkFlags & TH_THINK ) {	
 		// clear out the enemy when he dies or is hidden
 		idEntity* enemyEnt = enemy.ent;
@@ -2051,7 +2084,16 @@ void idAI::UpdateEnemy ( void ) {
 
 		// If our enemy isnt visible but is within aware range then we know where he is
 		if ( !IsEnemyVisible ( ) && DistanceTo ( enemy.ent ) < combat.awareRange ) {
-			UpdateEnemyPosition( true );
+			if (gameLocal.GetLocalPlayer()->stealthy == 2 && DistanceTo(enemy.ent) > combat.awareRange / 6)
+			{
+				gameLocal.Printf("Player was stealthy enough distance: %f, range: %f", DistanceTo(enemy.ent), combat.awareRange / 6);
+			}
+			else if (gameLocal.GetLocalPlayer()->stealthy != 3)
+			{
+				UpdateEnemyPosition(true);
+				gameLocal.Printf("Player was not stealthy enough distance: %f, range: %f", DistanceTo(enemy.ent), combat.awareRange / 6);
+			}
+
 		} else {
 /*		
 			// check if we heard any sounds in the last frame
@@ -2153,7 +2195,8 @@ void idAI::UpdateEnemyVisibility ( void ) {
 	enemy.fl.visible = CanSeeFrom ( GetEyePosition ( ), enemy.ent, false );
 
 	// IF the enemy isnt visible and not forcing an update we can just early out
-	if ( !enemy.fl.visible ) {
+	// or if the player is under invisibility spell
+	if ( !enemy.fl.visible && gameLocal.GetLocalPlayer()->stealthy > 2) {
 		return;
 	}
 	
@@ -3098,13 +3141,37 @@ idAI::HeardSound
 */
 idEntity *idAI::HeardSound( int ignore_team ){
 	// check if we heard any sounds in the last frame
-	idActor	*actor = gameLocal.GetAlertActor();
-	if ( actor && ( !ignore_team || ( ReactionTo( actor ) & ATTACK_ON_SIGHT ) ) && gameLocal.InPlayerPVS( this ) ) 	{
+	idActor	*actor = gameLocal.GetAlertActor(); //*()
+	if (!actor)
+	{
+		return NULL;
+	}
+	if (actor == gameLocal.GetLocalPlayer())
+	{
+		gameLocal.Printf("Player made a sound\n");
+		if (gameLocal.GetLocalPlayer()->stealthy > 0)
+		{
+			gameLocal.Printf("Unheard\n");
+			return NULL;
+		}
+	}
+	/*gameLocal.Printf("%s", actor->name.c_str());
+	gameLocal.Printf("%s", gameLocal.GetLocalPlayer()->name.c_str());
+	if (gameLocal.GetLocalPlayer() != NULL && gameLocal.GetLocalPlayer()->name != NULL && actor->name == gameLocal.GetLocalPlayer()->name)
+	{
+		if (gameLocal.GetLocalPlayer()->stealthy > 0)
+		{
+			gameLocal.Printf("Unheard\n");
+			return NULL;
+		}
+	}
+	*/
+	else if ( actor && ( !ignore_team || ( ReactionTo( actor ) & ATTACK_ON_SIGHT ) ) && gameLocal.InPlayerPVS( this ) ) 	{
 		idVec3 pos = actor->GetPhysics()->GetOrigin();
 		idVec3 org = physicsObj.GetOrigin();
 		float dist = ( pos - org ).LengthSqr();
 		idPlayer* player = gameLocal.GetLocalPlayer();
-		if ( dist < Square( combat.earRange )  && false) { //*() IMPLEMENT
+		if ( dist < Square( combat.earRange )) { //*() IMPLEMENT
 			//really close?
 			if ( dist < Square( combat.earRange/4.0f ) ) {		
 				return actor;
@@ -3945,6 +4012,14 @@ bool idAI::SkipImpulse( idEntity *ent, int id ){
 	return skip;
 }
 
+bool idAI::IsEnemyVisible()
+{
+	if (gameLocal.GetLocalPlayer()->stealthy > 2)
+	{
+		return false;
+	}
+	return enemy.ent && enemy.fl.visible;
+}
 /*
 ============
 idAI::CanHitEnemy

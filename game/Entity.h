@@ -109,6 +109,7 @@ public:
 
 class idEntity : public idClass {
 public:
+	bool angry = false;
 	static const int		MAX_PVS_AREAS = 4;
 
 	int						entityNumber;			// index into the entity list

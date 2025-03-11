@@ -111,6 +111,7 @@ stateResult_t rvWeaponShotgun::State_Idle( const stateParms_t& parms ) {
 		STAGE_INIT,
 		STAGE_WAIT,
 	};	
+	wfl.silent_fire = true;
 	switch ( parms.stage ) {
 		case STAGE_INIT:
 			if ( !AmmoAvailable( ) ) {

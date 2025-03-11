@@ -468,7 +468,7 @@ public:
 	virtual void			GetDebugInfo					( debugInfoProc_t proc, void* userData );
 
 
-   	bool					IsEnemyVisible					( void ) const;
+   	bool					IsEnemyVisible					( void );
   	bool					InCoverMode						( void ) const;
   	bool					InCrouchCoverMode				( void ) const;
  	bool					LookAtCoverTall					( void ) const;
@@ -1265,7 +1265,7 @@ ID_INLINE int idAI::GetTravelFlags ( void ) const {
 
 /*ID_INLINE bool idAI::IsEnemyVisible(void) const {
 	return enemy.ent && enemy.fl.visible;
-}*/ //testing
+}*/
 
 ID_INLINE bool idAI::IsEnemyRecentlyVisible( float maxLostVisTimeScale ) const {
 	return (enemy.ent

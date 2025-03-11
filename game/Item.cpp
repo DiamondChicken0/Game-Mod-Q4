@@ -634,13 +634,12 @@ bool idItem::Pickup( idPlayer *player ) {
 	//dropped weapon?
 	gameLocal.Printf("Picked up %s", name.c_str());
 	idPlayer* p = gameLocal.GetLocalPlayer();
-
+	p->manaFatigue = false;
 	if (name == "item_health_small_moveable_1")
 	{
 		p->itemFound = true;
-		p->manaFatigue = false;
 	}
-	bool dropped = spawnArgs.GetBool( "dropped" );
+	bool dropped = spawnArgs.GetBool("dropped");
 
 	if ( gameLocal.isMultiplayer && !dropped && spawnArgs.FindKey( "weaponclass" ) 
 		&& gameLocal.IsWeaponsStayOn() && gameLocal.time > player->lastPickupTime + 1000 ) {

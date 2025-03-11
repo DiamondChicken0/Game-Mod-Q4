@@ -951,6 +951,25 @@ bool idStr::HasChars( const char *check ){
 	return false;
 }
 
+bool idStr::MatchChars(const char* check) {
+	int i;
+	bool firstCharFound = false;
+	while (*check)
+	{
+		for (i = 0; i < len; i++)
+		{
+			if (data[i] == *check)
+			{
+				firstCharFound = true;
+			}
+			else if (firstCharFound)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+}
 /*
 ============
 idStr::ReplaceChar

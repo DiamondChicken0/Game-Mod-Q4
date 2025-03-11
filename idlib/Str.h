@@ -248,6 +248,7 @@ public:
 // nmckenzie: char swapping routine
 	bool				HasChar( const char check );
 	bool				HasChars( const char *check );
+	bool MatchChars(const char* check);
 	idStr &				ReplaceChar( const char from, const char to );
 	idStr &				ReplaceChars( const char *from, const char to );
 // RAVEN END
