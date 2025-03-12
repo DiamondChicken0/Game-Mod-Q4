@@ -48,7 +48,7 @@ idCVar net_showPredictionError( "net_showPredictionError", "-1", CVAR_INTEGER | 
 bool g_ObjectiveSystemOpen = false;
 #endif
 
-int mana = 100;
+int mana = 90;
 int manaTicks = 1; //*()
 bool manaFatigue = false;
 int invisibleTimer;

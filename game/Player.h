@@ -311,6 +311,7 @@ public:
 	int						lastHitTime;			// last time projectile fired by player hit target
 	int						lastSavingThrowTime;	// for the "free miss" effect
 
+	int mana;
 	int                     manaTicks; //*()
 	int                    stealthy; 
 	int ticksSinceInput;

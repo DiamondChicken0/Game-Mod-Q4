@@ -35,7 +35,7 @@ DELIVERABLES:
 	IP: Made the blaster require mana to fire
 	
 	What I'm planning:
-		- Blaster now consumes mana 
+		✔ Blaster now consumes mana 
 		- Machine Gun 
 		- Shotgun has massively reduced range to mimic a knife but does massive damage and reduces enemy vision when held
 		- Hyperblaster
@@ -53,11 +53,11 @@ DELIVERABLES:
 
 		To cast a spell you will need to input a button combo 
 	
-		jjk - Will teleport you to a point. Costs 20 Mana 
-		kkj - Will make you invisible (Make the player entity invisible via idEntity hidden flag). Costs 10 Mana/s
-		jkj - Makes all enemies within a small distance die. Costs 50 Mana
-		kjk - Recover 75 HP. Costs 90 Mana and mana wont auto-regen until you get hurt again.
-        jkk - Makes the nearest enemy hostile to another enemy		
+		✔jjk - Will teleport you to a point. Costs 20 Mana 
+		✔kkj - Will make you invisible for 10 seconds costs 40 Mana
+		✔jkj - Makes stroggs within a small distance die. Costs 50 Mana
+		✔kjk - Recover 75 HP. Costs 90 Mana and mana wont auto-regen until you get hurt again.
+        jkk - Makes the nearest strogg hostile to another enemy. Costs 30 Mana.	
 	
 ✖	5 Dishonored Items (Items that exist in the map world)
 	
@@ -82,12 +82,9 @@ DELIVERABLES:
 	
 ✔	All custom assets (def files, models, sounds, etc) placed in a pak001.pak file
 	
-✖	An In-Game Help Screen to explain your mod
+✔	An In-Game Help Screen to explain your mod
 	
-	What I'm planning:
-		Replace the Multiplayer menu with a help section where you can click on a section like weapons, spells, mechanics and be able
-		to get info on whatever is in the mod. If you were to navigate to Spells > Invisibility it would tell you the button combo,
-		the mana cost, and a description. 
+	Replaced the objective text with the button combos and mana costs for the spells in the game.
 	
 ✔	Custom User Interface(HUD or other in-game menus) for your game's features
 	The main menu is now purple, every single reference to "game" is now "hunt", there is flavor text in the new game selection.
